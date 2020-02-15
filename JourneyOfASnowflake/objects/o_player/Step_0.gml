@@ -27,13 +27,12 @@ if (up_key || up_dpad) {
 if (down_key) {
 	if place_meeting(x, y + 1, o_wall) {
 	gravity = 0;
-}
-else
-{
-vspd = vmove * -spd;
-	y -= vspd;
-}
-	
+	}
+	else
+	{
+		vspd = -spd;
+		y -= vspd;
+	}
 }
 //hover
 if (keyboard_check_pressed(vk_lcontrol)) {
