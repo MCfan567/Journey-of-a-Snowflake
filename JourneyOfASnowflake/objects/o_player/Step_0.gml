@@ -26,8 +26,15 @@ if (up_key) {
 }
 //down movement
 if (down_key) {
-	vspd = vmove * -spd;
+	if place_meeting(x, y + 1, o_wall) {
+	gravity = 0;
+}
+else
+{
+vspd = vmove * -spd;
 	y -= vspd;
+}
+	
 }
 //hover
 if (keyboard_check_pressed(vk_lcontrol)) {
@@ -38,8 +45,5 @@ if (keyboard_check_released(vk_lcontrol)) {
 }
 //jumping and gravity
 if !place_meeting(x, y + 1, o_wall) {
-	y += grv;
-}
-else {
-	grv = 0; 
+	gravity = 0;
 }
