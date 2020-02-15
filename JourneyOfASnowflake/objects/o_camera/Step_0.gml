@@ -7,8 +7,8 @@ if (mouse_check_button(2)) {
 }
 
 //Lerp current to target
-currentPos[0] = lerp(currentPos[0], targetPos[0], 0.2);
-currentPos[1] = lerp(currentPos[1], targetPos[1], 0.2);
+currentPos[0] = lerp(currentPos[0], targetPos[0], 0.1);
+currentPos[1] = lerp(currentPos[1], targetPos[1], 0.1);
 
 //Set camera to current
 camera_set_view_pos(cam, currentPos[0], currentPos[1]);

@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "35810b1e-ec65-4bb9-ae0a-09b72c10568a",
+            "Value": {
+                "id": "c113c362-b676-477c-9147-ff36176b7199",
+                "resourcePath": "sprites\\s_collision\\s_collision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "37b5ab59-662c-4f85-8cfd-f4290002d78d",
             "Value": {
                 "id": "722bcb46-62ff-41cf-807b-89230415596c",
