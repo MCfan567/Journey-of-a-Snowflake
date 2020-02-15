@@ -6,21 +6,23 @@ down_key = keyboard_check(ord("S"));
 var move = right_key - left_key;
 var vmove = down_key - up_key;
 if (left_key) {
-	horizontal = move * spd;
-	x += horizontal;
+	hspd = move * spd;
+	image_xscale = -1;
+	x += hspd;
 }
 
 if (right_key) {
-	horizontal = move * -spd;
-	x -= horizontal;
+	hspd = move * -spd;
+	image_xscale = 1;
+	x -= hspd;
 }
 
 if (up_key) {
-	vertical = vmove * spd;
-	y += vertical;
+	vspd = vmove * spd;
+	y += vspd;
 }
 
 if (down_key) {
-	vertical = vmove * -spd;
-	y -= vertical;
+	vspd = vmove * -spd;
+	y -= vspd;
 }
