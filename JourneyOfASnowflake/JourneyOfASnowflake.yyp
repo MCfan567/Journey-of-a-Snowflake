@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "b6829a90-f8aa-42f9-8b49-99936318f2aa",
+            "Value": {
+                "id": "41298a7b-9d8b-452d-a1ea-1198045bb6de",
+                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b9f9ba14-6eb9-490d-89df-805ca756640d",
             "Value": {
                 "id": "628ac090-8875-4a42-8217-979a2372778d",
@@ -138,7 +146,7 @@
             "Key": "c504dd15-68e2-4eda-bbb7-8f2fa9721e4c",
             "Value": {
                 "id": "2dc464f5-c70a-47bf-bd42-1b46ffc8ae66",
-                "resourcePath": "objects\\player\\player.yy",
+                "resourcePath": "objects\\o_player\\o_player.yy",
                 "resourceType": "GMObject"
             }
         },

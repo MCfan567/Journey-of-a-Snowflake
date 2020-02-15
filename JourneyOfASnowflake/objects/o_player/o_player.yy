@@ -2,7 +2,7 @@
     "id": "c504dd15-68e2-4eda-bbb7-8f2fa9721e4c",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "player",
+    "name": "o_player",
     "eventList": [
         
     ],
