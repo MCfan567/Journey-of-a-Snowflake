@@ -24,7 +24,7 @@ if (up_key || up_dpad) {
 	y -= spd;
 }
 //down movement
-if (down_key) {
+if (down_key || down_dpad) {
 	if place_meeting(x, y + 1, o_wall) {
 	gravity = 0;
 	}
