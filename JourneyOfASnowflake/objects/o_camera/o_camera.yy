@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "o_camera",
     "eventList": [
-        
+        {
+            "id": "322487e8-5e66-4074-8c38-b1f1ad8540f2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "b6829a90-f8aa-42f9-8b49-99936318f2aa"
+        },
+        {
+            "id": "ce2a3c60-8ea0-4496-ae3b-279d548aed50",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "b6829a90-f8aa-42f9-8b49-99936318f2aa"
+        },
+        {
+            "id": "a4f3e3f9-834d-402c-9f3e-3a832e6a8da2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 6,
+            "m_owner": "b6829a90-f8aa-42f9-8b49-99936318f2aa"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -25,5 +54,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": true
+    "visible": false
 }
