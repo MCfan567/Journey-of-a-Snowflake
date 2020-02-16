@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "06f2c5be-e939-4329-87f7-409f5089b03e",
+            "Value": {
+                "id": "3c7c929a-611a-4e91-b387-b335cf236ffa",
+                "resourcePath": "tilesets\\t_WaterUnder\\t_WaterUnder.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "09aa1e6a-8d16-476f-94ad-a1830d98abff",
             "Value": {
                 "id": "85368684-3fed-4f3c-a7e6-e0287ce0f1e6",
@@ -52,6 +60,14 @@
                 "id": "eba5d7e3-637c-4e76-8d6d-ec76c8aa6c4d",
                 "resourcePath": "views\\2235e84d-93cb-4354-86fa-80a5a8f87ad4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "26534150-ce4f-4896-bcb5-ef51ba1e3030",
+            "Value": {
+                "id": "faf25a7e-7672-42ca-a1d5-8d94543c162b",
+                "resourcePath": "tilesets\\t_WaterTop\\t_WaterTop.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -111,11 +127,43 @@
             }
         },
         {
+            "Key": "7ad2cd20-fc98-4be3-99ba-8af1c585e862",
+            "Value": {
+                "id": "c9140195-38d0-47d3-8013-e81e57256a51",
+                "resourcePath": "sprites\\s_WaterTop\\s_WaterTop.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7bcf6a47-38c5-416d-aeb4-2e09e84534d4",
+            "Value": {
+                "id": "05ff28e0-9d61-40c0-a33e-b6d56ed10f7a",
+                "resourcePath": "views\\7bcf6a47-38c5-416d-aeb4-2e09e84534d4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "858402ad-e2e3-4416-a8bd-316ef684aadd",
+            "Value": {
+                "id": "575cf0cb-e974-4b73-aadb-5dc36fe3f94d",
+                "resourcePath": "views\\858402ad-e2e3-4416-a8bd-316ef684aadd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8b1028cd-c462-4bfe-966c-4eb7ea21195c",
             "Value": {
                 "id": "e549728a-abbb-4316-b570-07f417c3f704",
                 "resourcePath": "views\\8b1028cd-c462-4bfe-966c-4eb7ea21195c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "91cfdb1c-bc25-41c8-b855-9c3b13634c8b",
+            "Value": {
+                "id": "9830ec30-40b0-4bd4-ba33-357eafd2e088",
+                "resourcePath": "sprites\\s_WaterUnder\\s_WaterUnder.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
