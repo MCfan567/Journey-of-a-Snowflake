@@ -2,36 +2,46 @@ left_key = keyboard_check(ord("A"));
 right_key = keyboard_check(ord("D"));
 up_key = keyboard_check(ord("W"));
 down_key = keyboard_check(ord("S"));
-float_key_down = keyboard_check_pressed(vk_lcontrol) || gamepad_button_check_pressed(0,gp_face3);
-float_key_up = keyboard_check_released(vk_lcontrol) || gamepad_button_check_released(0,gp_face3);
+float_key_down = keyboard_check(vk_lcontrol) || gamepad_button_check_pressed(0,gp_face3);
 
 left_dpad = gamepad_button_check(0, gp_padl);
 right_dpad = gamepad_button_check(0, gp_padr);
 up_dpad = gamepad_button_check(0, gp_padu);
 down_dpad = gamepad_button_check(0, gp_padd);
 
-//left movement
-if (left_key || left_dpad) {
-	image_xscale = -1;	
-	phy_position_x -= spd;	
+var moveX = right_key - left_key;
+var moveXG = right_dpad - left_dpad;
+
+var moveY = down_key - up_key;
+var moveYG = down_dpad - up_dpad;
+
+if (moveX != 0)
+{
+	phy_speed_x = moveX*Xspd;	
 }
-//right movement
-if (right_key || right_dpad) {
-	image_xscale = 1;	
-	phy_position_x += spd;	
-}
-//up movement
-if (up_key || up_dpad) {	
-	phy_position_y -= spd;	
-		
-}
-//down movement
-if (down_key || down_dpad) {
-	vspd = -spd;
-	phy_position_y -= vspd;
+else if (moveXG != 0)
+{
+	phy_speed_x = moveXG*Xspd;	
 }
 
-//hover
-if (float_key_down) {
-	phy_position_y -= 20;
+if (moveY != 0 && !float_key_down)
+{
+	phy_speed_y = moveY*Yspd;
+}
+else if (moveYG != 0 && float_key_down)
+{
+	phy_speed_y = moveYG*Yspd;	
+}
+
+if (float_key_down)
+{
+
+	if (phy_position_y < LastFloor - Hover)
+	{
+		phy_speed_y = +Yspd;
+	}
+	else
+	{
+		phy_position_y = LastFloor - Hover;
+	}
 }
