@@ -12,43 +12,26 @@ down_dpad = gamepad_button_check(0, gp_padd);
 
 //left movement
 if (left_key || left_dpad) {
-	image_xscale = -1;
-	if (!place_meeting(x - 5, y, o_wall)) {
-		x -= spd;
-	}
+	image_xscale = -1;	
+	phy_position_x -= spd;	
 }
 //right movement
 if (right_key || right_dpad) {
-	image_xscale = 1;
-	if (!place_meeting(x + 5, y, o_wall)) {
-		x += spd;
-	}
+	image_xscale = 1;	
+	phy_position_x += spd;	
 }
 //up movement
-if (up_key || up_dpad) {
-	if (!place_meeting(x, y - 5, o_wall)) {
-		y -= spd;
-	}
+if (up_key || up_dpad) {	
+	phy_position_y -= spd;	
+		
 }
 //down movement
 if (down_key || down_dpad) {
-	if place_meeting(x, y + 5, o_wall) {
-	gravity = 0;
-	}
-	else
-	{
-		vspd = -spd;
-		y -= vspd;
-	}
+	vspd = -spd;
+	phy_position_y -= vspd;
 }
+
 //hover
 if (float_key_down) {
-		y -= 20;
-}
-if (float_key_up) {
-		y += 20;
-}
-//jumping and gravity
-if !place_meeting(x, y + 1, o_wall) {
-	gravity = 0;
+	phy_position_y -= 20;
 }

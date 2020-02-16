@@ -1,4 +1,3 @@
-vspd = 0;
-hspd = 0; 
 spd = 5;
-gravity = 0.2;
+
+phy_fixed_rotation=true;  
