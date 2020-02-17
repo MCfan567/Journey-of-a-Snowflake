@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "9f512523-ae2e-4eaf-b905-344eee8037b4",
+            "Value": {
+                "id": "1abc559c-7636-45c6-9814-c3163d32d93f",
+                "resourcePath": "sprites\\s_SnowyMountains\\s_SnowyMountains.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1cb1d9b-b872-44b8-ade8-fbcd1ceb9ac7",
             "Value": {
                 "id": "a3818f4b-0785-484a-9dd9-066fbd07088d",
@@ -323,6 +331,14 @@
             "Value": {
                 "id": "c4300f8a-279c-4973-b8ae-fe6bd493f752",
                 "resourcePath": "views\\d7e38a59-4ea4-4e97-8a7d-3a77ed52c4ba.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d8f2f337-d16f-4a27-bf5d-5e1f415775a7",
+            "Value": {
+                "id": "e43d38d8-5f61-48b2-8b2f-e9e8dca84231",
+                "resourcePath": "views\\d8f2f337-d16f-4a27-bf5d-5e1f415775a7.yy",
                 "resourceType": "GMFolder"
             }
         },
