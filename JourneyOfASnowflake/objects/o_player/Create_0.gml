@@ -9,7 +9,9 @@ hBarWidth = 100;
 hBarHeight = 12;
 hBarX = 50;
 hBarY = 25;
-
+dashcount = 0;
+dashing = false;
+dashinterval = 0
 timer = 0;
 JumpLimit = 2;
 LastFloor = 0;
