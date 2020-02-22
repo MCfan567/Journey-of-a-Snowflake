@@ -4,8 +4,10 @@ up_key = keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu);
 down_key = keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd);;
 float_key_down = keyboard_check(vk_lcontrol) || gamepad_button_check_pressed(0,gp_face3);
 
+
 var moveX = right_key - left_key;
 var moveY = down_key - up_key;
+directionX = moveX;
 
 if (moveX != 0)
 {

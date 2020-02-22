@@ -10,10 +10,16 @@ hBarHeight = 12;
 hBarX = 50;
 hBarY = 25;
 
+directionX = 0;
+
 timer = 0;
 JumpLimit = 2;
 LastFloor = 0;
 phy_fixed_rotation=true;  
+
+
+spikeDamage = 5;
+
 
 
 image_speed = 0;
