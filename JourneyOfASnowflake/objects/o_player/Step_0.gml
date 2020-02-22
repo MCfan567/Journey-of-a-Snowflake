@@ -69,5 +69,12 @@ else if(yVel != 0)
 	}
 }
 
-
+if (place_meeting(phy_position_x, phy_position_y, o_water)) {
+	phy_linear_velocity_x /= 2;
+	if (moveY <= 0) {
+		phy_speed_y = -Yspd*0.1;	
+	} else {
+		phy_speed_y = Yspd*0.1;
+	}
+}
 
