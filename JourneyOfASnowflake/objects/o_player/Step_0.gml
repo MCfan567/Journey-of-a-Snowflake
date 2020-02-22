@@ -7,9 +7,11 @@ float_key_down = keyboard_check(vk_lcontrol) || gamepad_button_check_pressed(0,g
 var moveX = right_key - left_key;
 var moveY = down_key - up_key;
 
+
 if (moveX != 0)
 {
 	phy_speed_x = moveX*Xspd;	
+	Dir = sign(moveX);
 }
 else
 {

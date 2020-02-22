@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1a03e450-b124-4902-a0c8-5f0016c327cd",
+            "Value": {
+                "id": "9aab40c4-c580-49b5-93f2-9e1b5621e239",
+                "resourcePath": "objects\\o_projectile\\o_projectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1a817f9e-1e39-4080-9e58-a0c7724850a1",
             "Value": {
                 "id": "e611a14c-aaa7-4933-acaf-377f18feefc8",
