@@ -35,7 +35,35 @@ if (float_key_down)
 		phy_position_y = LastFloor - Hover;
 	}
 }
+if (keyboard_check_pressed(vk_shift)){
+	dashcount++;
+	dashinterval = 0;
+}
+else {
+	dashinterval++;
 
+if (dashinterval >= 60 && dashing == false) {
+	dashcount = 0;
+	dashinterval = 0;
+	}
+}
+if (dashcount >= 1) {
+	dashing = true;
+}
+
+if (dashing) {
+	if (left_key) || (right_key) {
+		Xspd = 20;
+		dashcount = 0;
+		dashinterval = 0;
+		timer++;
+	}
+}
+if (timer >= 4 ) {
+	Xspd = 3;
+	dashing = false;
+	timer = 0;
+}
 
 //Below Here are the Animation Functions. The PlayerLimbs
 //Object is a child object of this one. As so long as the frames

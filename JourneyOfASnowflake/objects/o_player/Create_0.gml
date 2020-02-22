@@ -12,6 +12,10 @@ hBarY = 25;
 
 directionX = 0;
 
+dashcount = 0;
+dashing = false;
+dashinterval = 0
+
 timer = 0;
 JumpLimit = 2;
 LastFloor = 0;
