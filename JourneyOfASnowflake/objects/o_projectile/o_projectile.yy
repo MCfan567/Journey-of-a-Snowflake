@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "o_projectile",
     "eventList": [
-        {
-            "id": "7b1402cb-0ba9-4749-8a6b-642cb5aa26cf",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "1a03e450-b124-4902-a0c8-5f0016c327cd"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
