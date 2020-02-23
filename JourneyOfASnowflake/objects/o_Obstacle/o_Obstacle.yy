@@ -1,8 +1,8 @@
 {
-    "id": "1e78cd48-5d01-45a8-ba74-e39ee4d344d9",
+    "id": "33971733-d330-4eb5-b61f-eae3f7c5bc5a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_floor",
+    "name": "o_Obstacle",
     "eventList": [
         
     ],
@@ -17,42 +17,42 @@
     "physicsKinematic": false,
     "physicsLinearDamping": 0,
     "physicsObject": true,
-    "physicsRestitution": 0.1,
+    "physicsRestitution": 3,
     "physicsSensor": false,
     "physicsShape": 1,
     "physicsShapePoints": [
         {
-            "id": "6f0d9f9e-6046-42aa-aaf5-56055d6a68f5",
+            "id": "3a8c5137-add2-4257-82bd-af746af904ae",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
             "y": 0
         },
         {
-            "id": "0349165e-3bbd-498f-a884-898c28bec73b",
+            "id": "0c8646ea-243e-49f6-9565-8fcad6865112",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 64,
             "y": 0
         },
         {
-            "id": "d22f608c-2142-4ce3-8e03-fe4c5cbbe100",
+            "id": "5c15f37b-ea30-4dd2-abc5-1b9b16c92428",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 64,
-            "y": 16
+            "y": 64
         },
         {
-            "id": "b8df5a26-fdb3-44d4-974d-d04e9eaed282",
+            "id": "f6a000b6-4577-49c0-a076-f57f40f36db5",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
-            "y": 16
+            "y": 64
         }
     ],
     "physicsStartAwake": true,
     "properties": null,
     "solid": true,
-    "spriteId": "e11316fe-f74d-4668-ba88-9a86b4d93ed4",
-    "visible": false
+    "spriteId": "4d9a2eef-fecd-49a6-b22e-9dae4f51d927",
+    "visible": true
 }

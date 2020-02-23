@@ -4,14 +4,14 @@ up_key = keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu);
 down_key = keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd);;
 float_key_down = keyboard_check(vk_lcontrol) || gamepad_button_check_pressed(0,gp_face3);
 
+
 var moveX = right_key - left_key;
 var moveY = down_key - up_key;
-
+directionX = moveX;
 
 if (moveX != 0)
 {
 	phy_speed_x = moveX*Xspd;	
-	Dir = sign(moveX);
 }
 else
 {
@@ -35,7 +35,35 @@ if (float_key_down)
 		phy_position_y = LastFloor - Hover;
 	}
 }
+if (keyboard_check_pressed(vk_shift)){
+	dashcount++;
+	dashinterval = 0;
+}
+else {
+	dashinterval++;
 
+if (dashinterval >= 60 && dashing == false) {
+	dashcount = 0;
+	dashinterval = 0;
+	}
+}
+if (dashcount >= 1) {
+	dashing = true;
+}
+
+if (dashing) {
+	if (left_key) || (right_key) {
+		Xspd = 20;
+		dashcount = 0;
+		dashinterval = 0;
+		timer++;
+	}
+}
+if (timer >= 4 ) {
+	Xspd = 3;
+	dashing = false;
+	timer = 0;
+}
 
 //Below Here are the Animation Functions. The PlayerLimbs
 //Object is a child object of this one. As so long as the frames

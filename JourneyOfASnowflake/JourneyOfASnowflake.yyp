@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "1a03e450-b124-4902-a0c8-5f0016c327cd",
-            "Value": {
-                "id": "9aab40c4-c580-49b5-93f2-9e1b5621e239",
-                "resourcePath": "objects\\o_projectile\\o_projectile.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1a817f9e-1e39-4080-9e58-a0c7724850a1",
             "Value": {
                 "id": "e611a14c-aaa7-4933-acaf-377f18feefc8",
@@ -135,6 +127,14 @@
             }
         },
         {
+            "Key": "33971733-d330-4eb5-b61f-eae3f7c5bc5a",
+            "Value": {
+                "id": "7b92ac04-2227-4e29-a1b7-cd2e72b8b71f",
+                "resourcePath": "objects\\o_Obstacle\\o_Obstacle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "35810b1e-ec65-4bb9-ae0a-09b72c10568a",
             "Value": {
                 "id": "c113c362-b676-477c-9147-ff36176b7199",
@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "4d9a2eef-fecd-49a6-b22e-9dae4f51d927",
+            "Value": {
+                "id": "12dc20b6-4900-48e5-8a14-5922a8db9c4b",
+                "resourcePath": "sprites\\s_Obstacle\\s_Obstacle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5573562e-49c6-44a3-93d9-5b6b1c819a4a",
             "Value": {
                 "id": "d5db690e-bb0b-47e2-b647-e109c7089932",
@@ -179,6 +187,14 @@
             "Value": {
                 "id": "02855806-965e-4ffe-9472-6e4f2e87c3e1",
                 "resourcePath": "views\\590b7729-8c05-41d3-a105-97d816c240f5.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "60a54e71-f628-4e55-878c-86061d3b203d",
+            "Value": {
+                "id": "b5bf0d25-2388-4135-8495-30977e784274",
+                "resourcePath": "views\\60a54e71-f628-4e55-878c-86061d3b203d.yy",
                 "resourceType": "GMFolder"
             }
         },
