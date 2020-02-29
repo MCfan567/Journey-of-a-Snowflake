@@ -27,7 +27,7 @@ if (moveY != 0 && !float_key)
 	if (moveY < 0 && JumpLimit > 0)
 	{
 		JumpLimit--;
-		phy_speed_y = moveY*Yspd;
+		phy_speed_y = moveY*(Yspd);
 	}
 }
 /* Movement Controls End Here */
