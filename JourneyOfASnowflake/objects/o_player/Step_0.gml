@@ -1,8 +1,11 @@
-left_key = keyboard_check(ord("A")) || gamepad_button_check(0, gp_padl);
-right_key = keyboard_check(ord("D")) || gamepad_button_check(0, gp_padr);
-up_key = keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu);
-down_key = keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd);;
-float_key_down = keyboard_check(vk_lcontrol) || gamepad_button_check_pressed(0,gp_face3);
+/* Control Variables */
+left_key = keyboard_check(ord("A")) || gamepad_button_check(1, gp_padl);
+right_key = keyboard_check(ord("D")) || gamepad_button_check(1, gp_padr);
+up_key = keyboard_check(ord("W")) || gamepad_button_check(1, gp_padu);
+down_key = keyboard_check(ord("S")) || gamepad_button_check(1, gp_padd);
+float_key = keyboard_check(vk_lcontrol) || gamepad_button_check(1,gp_face3);
+shoot_key = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(1,gp_face2);
+dash_key = 	keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(1,gp_face4);
 
 /* Movement Controls start here */ 
 var moveX = right_key - left_key;
@@ -19,7 +22,7 @@ else
 	phy_linear_velocity_x = 0;
 }
 
-if (moveY != 0 && !float_key_down)
+if (moveY != 0 && !float_key)
 {
 	if (moveY < 0 && JumpLimit > 0)
 	{
@@ -30,7 +33,7 @@ if (moveY != 0 && !float_key_down)
 /* Movement Controls End Here */
 
 /* Float Mechanics Start Here */
-if (float_key_down)
+if (float_key)
 {
 	
 	if (phy_position_y > LastFloor - Hover)
@@ -41,7 +44,7 @@ if (float_key_down)
 /* Float Mechanics End Here */
 
 /* Dashing Mechanics Start Here */
-if (keyboard_check_pressed(vk_shift)){
+if (dash_key){
 	dashcount++;
 	dashinterval = 0;
 }
@@ -72,6 +75,30 @@ if (timer >= 4 ) {
 }
 /* Dashing Mechanics End Here */
 
+/* Projectile Mechanics Start Here */
+if(shoot_key) {
+	var proj = instance_create_depth(x,y,-10000, o_projectile);
+	with (proj) {
+	
+		if (keyboard_check(ord("P")) && keyboard_check(ord("L"))) {
+			physics_apply_local_impulse(0, 10, 0, -200);
+		}
+		else if (keyboard_check(ord("S"))) {
+			physics_apply_local_impulse(0, 10, 0, 200);
+		}
+		else if (keyboard_check(ord("L"))) {
+			physics_apply_local_impulse(0, 10, o_player.Dir * 200, 200);
+		}
+		else if (keyboard_check(ord("P"))) {
+			physics_apply_local_impulse(0, 10, o_player.Dir * 200, -200);
+		}
+		else {
+			physics_apply_local_impulse(0, 10, o_player.Dir * 200, 0);
+		}
+	}
+}
+/* Projectile Mechanics End Here */
+
 /* Water Mechanics Start Here */
 if (place_meeting(phy_position_x, phy_position_y, o_water)) {
 	phy_linear_velocity_x /= 2;
@@ -81,7 +108,7 @@ if (place_meeting(phy_position_x, phy_position_y, o_water)) {
 		phy_speed_y = Yspd*0.1;
 	}
 }
-/*Water Mechanics End Here */
+/* Water Mechanics End Here */
 
 //Below Here are the Animation Functions. The PlayerLimbs
 //Object is a child object of this one. As so long as the frames
