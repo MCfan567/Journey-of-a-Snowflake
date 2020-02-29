@@ -27,11 +27,9 @@ if (moveY != 0 && !float_key_down)
 		phy_speed_y = moveY*Yspd;
 	}
 }
-
 /* Movement Controls End Here */
 
 /* Float Mechanics Start Here */
-
 if (float_key_down)
 {
 	
@@ -40,11 +38,9 @@ if (float_key_down)
 		phy_position_y = LastFloor - Hover;
 	}
 }
-
 /* Float Mechanics End Here */
 
 /* Dashing Mechanics Start Here */
-
 if (keyboard_check_pressed(vk_shift)){
 	dashcount++;
 	dashinterval = 0;
@@ -74,8 +70,18 @@ if (timer >= 4 ) {
 	dashing = false;
 	timer = 0;
 }
-
 /* Dashing Mechanics End Here */
+
+/* Water Mechanics Start Here */
+if (place_meeting(phy_position_x, phy_position_y, o_water)) {
+	phy_linear_velocity_x /= 2;
+	if (moveY <= 0) {
+		phy_speed_y = -Yspd*0.2;	
+	} else {
+		phy_speed_y = Yspd*0.1;
+	}
+}
+/*Water Mechanics End Here */
 
 //Below Here are the Animation Functions. The PlayerLimbs
 //Object is a child object of this one. As so long as the frames
