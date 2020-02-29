@@ -4,14 +4,15 @@ up_key = keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu);
 down_key = keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd);;
 float_key_down = keyboard_check(vk_lcontrol) || gamepad_button_check_pressed(0,gp_face3);
 
-
+/* Movement Controls start here */ 
 var moveX = right_key - left_key;
 var moveY = down_key - up_key;
 directionX = moveX;
 
 if (moveX != 0)
 {
-	phy_speed_x = moveX*Xspd;	
+	phy_speed_x = moveX*Xspd;
+	Dir = sign(moveX); // Used for projectile aiming
 }
 else
 {
@@ -27,6 +28,10 @@ if (moveY != 0 && !float_key_down)
 	}
 }
 
+/* Movement Controls End Here */
+
+/* Float Mechanics Start Here */
+
 if (float_key_down)
 {
 	
@@ -35,6 +40,11 @@ if (float_key_down)
 		phy_position_y = LastFloor - Hover;
 	}
 }
+
+/* Float Mechanics End Here */
+
+/* Dashing Mechanics Start Here */
+
 if (keyboard_check_pressed(vk_shift)){
 	dashcount++;
 	dashinterval = 0;
@@ -64,6 +74,8 @@ if (timer >= 4 ) {
 	dashing = false;
 	timer = 0;
 }
+
+/* Dashing Mechanics End Here */
 
 //Below Here are the Animation Functions. The PlayerLimbs
 //Object is a child object of this one. As so long as the frames

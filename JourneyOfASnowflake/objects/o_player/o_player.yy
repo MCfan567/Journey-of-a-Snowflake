@@ -73,6 +73,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "c504dd15-68e2-4eda-bbb7-8f2fa9721e4c"
+        },
+        {
+            "id": "4e6f9238-6aa7-4bbc-b660-37523a943c9f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 32,
+            "eventtype": 9,
+            "m_owner": "c504dd15-68e2-4eda-bbb7-8f2fa9721e4c"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -120,7 +130,22 @@
         }
     ],
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "1b02414d-7115-4b7c-aa3f-237e2ff02e66",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "Dir",
+            "varType": 1
+        }
+    ],
     "solid": true,
     "spriteId": "36e4e70a-2b98-4bef-832f-7cc6f5681b73",
     "visible": true
